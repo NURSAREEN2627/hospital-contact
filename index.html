@@ -2,144 +2,94 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ข้อมูลติดต่อหน่วยบริการสุขภาพ อำเภอสุไหงโก-ลก</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body{
-    font-family:Arial;
-    background:#f4f6f9;
-    margin:0;
-}
+<title>ข้อมูลติดต่อหน่วยบริการสุขภาพ</title>
 
-/* header */
-.header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-.header h1{
-    margin:0;
-    font-size:22px;
-}
-
-.header p{
-    margin:5px 0 0;
-    font-size:14px;
-}
-
-/* container */
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-}
-
-/* card */
-.card{
-    background:white;
-    width:300px;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-/* title */
-.title{
-    font-weight:bold;
-    color:#0d6efd;
-    font-size:16px;
-}
-
-/* info */
-.info{
-    margin:6px 0;
-    font-size:14px;
-}
-
-/* button */
-.btn{
-    display:block;
-    text-align:center;
-    padding:10px;
-    margin-top:8px;
-    border-radius:8px;
-    color:white;
-    text-decoration:none;
-}
-
-.call{background:#28a745;}
-.fb{background:#1877f2;}
-
-/* 📱 Mobile */
-@media(max-width:600px){
-    .container{
-        flex-direction:column;
-        padding:10px;
-    }
-
-    .card{
-        width:100%;
-    }
-}
-</style>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="bg-light">
 
-<div class="header">
-    <h1>📞 ข้อมูลติดต่อหน่วยบริการสุขภาพ</h1>
-    <p>อำเภอสุไหงโก-ลก จังหวัดนราธิวาส</p>
+<!-- Header -->
+<div class="bg-primary text-white text-center p-3">
+    <h4 class="mb-0">📞 ข้อมูลติดต่อหน่วยบริการสุขภาพ</h4>
+    <small>อำเภอสุไหงโก-ลก จังหวัดนราธิวาส</small>
 </div>
 
-<div class="container">
+<!-- Container -->
+<div class="container py-4">
+<div class="row g-3">
 
 <!-- สุไหงโก-ลก -->
-<div class="card">
-<div class="title">🏥 โรงพยาบาลสุไหงโก-ลก</div>
-<div class="info">📞 073-517-500</div>
-<a href="tel:073517500" class="btn call">โทร</a>
-<a href="https://www.facebook.com/100088434444630" class="btn fb" target="_blank">Facebook</a>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h6 class="text-primary">🏥 โรงพยาบาลสุไหงโก-ลก</h6>
+<p class="mb-2">📞 073-517-500</p>
+
+<a href="tel:073517500" class="btn btn-success w-100 mb-2">โทร</a>
+<a href="https://www.facebook.com/100088434444630" target="_blank" class="btn btn-primary w-100">Facebook</a>
+</div>
+</div>
 </div>
 
 <!-- ปาเสมัส -->
-<div class="card">
-<div class="title">🏥 รพ.สต.ปาเสมัส</div>
-<div class="info">📞 062-207-4822</div>
-<a href="tel:0622074822" class="btn call">โทร</a>
-<a href="https://www.facebook.com/rph.st.pa.se.mas.x.suhingkolk.c.nrathiwas" class="btn fb" target="_blank">Facebook</a>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h6 class="text-primary">🏥 รพ.สต.ปาเสมัส</h6>
+<p class="mb-2">📞 062-207-4822</p>
+
+<a href="tel:0622074822" class="btn btn-success w-100 mb-2">โทร</a>
+<a href="https://www.facebook.com/rph.st.pa.se.mas.x.suhingkolk.c.nrathiwas" target="_blank" class="btn btn-primary w-100">Facebook</a>
+</div>
+</div>
 </div>
 
 <!-- มูโนะ -->
-<div class="card">
-<div class="title">🏥 รพ.สต.มูโนะ</div>
-<div class="info">📞 073-621-190</div>
-<a href="tel:073621190" class="btn call">โทร</a>
-<a href="https://www.facebook.com/Munoh10169/" class="btn fb" target="_blank">Facebook</a>
-<a href="https://www.facebook.com/profile.php?id=61557020771067" class="btn fb" target="_blank">Facebook (สำรอง)</a>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h6 class="text-primary">🏥 รพ.สต.มูโนะ</h6>
+<p class="mb-2">📞 073-621-190</p>
+
+<a href="tel:073621190" class="btn btn-success w-100 mb-2">โทร</a>
+<a href="https://www.facebook.com/Munoh10169/" target="_blank" class="btn btn-primary w-100 mb-2">Facebook</a>
+<a href="https://www.facebook.com/profile.php?id=61557020771067" target="_blank" class="btn btn-primary w-100">Facebook (สำรอง)</a>
+</div>
+</div>
 </div>
 
 <!-- ศูนย์แพทย์ -->
-<div class="card">
-<div class="title">🏥 ศูนย์แพทย์ใกล้ใจ (รพ.สุไหงโก-ลก)</div>
-<div class="info">📞 073-517-500</div>
-<a href="tel:073517500" class="btn call">โทร</a>
-<a href="https://www.facebook.com/100088434444630" class="btn fb" target="_blank">Facebook</a>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h6 class="text-primary">🏥 ศูนย์แพทย์ใกล้ใจ</h6>
+<p class="mb-2">📞 073-517-500</p>
+
+<a href="tel:073517500" class="btn btn-success w-100 mb-2">โทร</a>
+<a href="https://www.facebook.com/100088434444630" target="_blank" class="btn btn-primary w-100">Facebook</a>
+</div>
+</div>
 </div>
 
-<!-- ศูนย์แพทย์2 -->
-<div class="card">
-<div class="title">🏥 ศูนย์แพทย์ใกล้ใจ 2</div>
-<div class="info">📞 073-614-469</div>
-<a href="tel:073614469" class="btn call">โทร</a>
-<a href="https://www.facebook.com/100088434444630" class="btn fb" target="_blank">Facebook</a>
+<!-- ศูนย์แพทย์ 2 -->
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h6 class="text-primary">🏥 ศูนย์แพทย์ใกล้ใจ 2</h6>
+<p class="mb-2">📞 073-614-469</p>
+
+<a href="tel:073614469" class="btn btn-success w-100 mb-2">โทร</a>
+<a href="https://www.facebook.com/100088434444630" target="_blank" class="btn btn-primary w-100">Facebook</a>
+</div>
+</div>
 </div>
 
+</div>
 </div>
 
 </body>
